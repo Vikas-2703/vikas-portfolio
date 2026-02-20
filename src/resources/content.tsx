@@ -2,14 +2,14 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
+  firstName: "Vikas",
+  lastName: "", // optional (or put your last name)
+  name: "Vikas",
+  role: "Data Analyst | Data Scientist",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "nitesh.vikas11@gmail.com",
+  location: "Australia/Melbourne", 
+  languages: ["English", "Hindi"], 
 };
 
 const newsletter: Newsletter = {
@@ -21,29 +21,17 @@ const newsletter: Newsletter = {
 const social: Social = [
   // Links are automatically displayed.
   // Import new icons in /once-ui/icons.ts
-  // Set essentials: true for links you want to show on the about page
+  
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/Vikas-2703",
     essential: true,
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-    essential: true,
-  },
-  {
-    name: "Instagram",
-    icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
-    essential: false,
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.linkedin.com/in/vikas-66161921b/",
     essential: true,
   },
   {
@@ -58,11 +46,13 @@ const home: Home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
-  title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  title: "Vikas | Data Analyst & Data Scientist",
+description:
+  "Portfolio — Power BI dashboards, SQL analytics, Python automation, and GenAI projects.",
+  headline: <>Data Analyst | Data Scientist — Power BI, SQL, Python, AWS</>,
   featured: {
-    display: true,
+    display: false
+    ,
     title: (
       <Row gap="12" vertical="center">
         <strong className="ml-4">Once UI</strong>{" "}
@@ -75,17 +65,25 @@ const home: Home = {
     href: "/work/building-once-ui-a-customizable-design-system",
   },
   subline: (
-    <>
-    I'm Selene, a design engineer at <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
-</>
-  ),
+  <>
+    I’m Vikas, a data professional in Australia specialising in{" "}
+    <Text as="span" size="xl" weight="strong">
+      Power BI, SQL, and Python
+    </Text>
+    . I build KPI dashboards, automate reporting, and develop{" "}
+    <Text as="span" size="xl" weight="strong">
+      GenAI solutions
+    </Text>{" "}
+    that turn data into clear business decisions.
+  </>
+),
 };
 
 const about: About = {
   path: "/about",
   label: "About",
   title: `About – ${person.name}`,
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  description: `Data Analyst & Data Scientist in Australia | Power BI, SQL, Python, GenAI`,
   tableOfContent: {
     display: true,
     subItems: false,
@@ -94,7 +92,7 @@ const about: About = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
@@ -102,9 +100,9 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        I’m a Data Analyst / Data Scientist focused on building reliable dashboards, automated
+    reporting, and GenAI-enabled analytics. I enjoy turning messy data into clean models,
+    clear insights, and stakeholder-ready storytelling using Power BI, SQL, Python, and cloud tools.
       </>
     ),
   },
@@ -112,59 +110,53 @@ const about: About = {
     display: true, // set to false to hide this section
     title: "Work Experience",
     experiences: [
-      {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
-        achievements: [
-          <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
-        ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
-        ],
-        images: [],
-      },
+  {
+    company: "Tech Mahindra",
+    timeframe: "Jan 2025 – Present",
+    role: "Data Analyst",
+    achievements: [
+      <>Designed and delivered weekly and month-end operational and financial performance reports, supporting leadership visibility across cost, SLA, and productivity metrics.</>,
+      <>Applied analytical and statistical techniques to large datasets to identify trends and root causes, contributing to a 56% reduction in aged backlog.</>,
+      <>Implemented data validation and quality checks, improving SLA compliance from 80% to 92% and increasing stakeholder confidence.</>,
+      <>Prepared executive-level performance summaries for senior stakeholders, translating data insights into operational recommendations.</>,
     ],
+    images: [],
+  },
+  {
+    company: "RMIT University",
+    timeframe: "Jul 2024 – Nov 2024",
+    role: "Data Analyst Intern",
+    achievements: [
+      <>Performed data discovery, profiling, and cleansing across multi-source datasets using Python (Pandas, NumPy) and SQL, reducing classification errors by 69%.</>,
+      <>Built reusable Python-based transformation pipelines to standardise metrics and improve downstream data usability.</>,
+      <>Supported cloud-hosted ETL workflows on AWS, ensuring data accuracy, consistency, and refresh reliability.</>,
+    ],
+    images: [],
+  },
+  {
+    company: "Kurukshetra University",
+    timeframe: "Apr 2022 – Apr 2023",
+    role: "Data Analyst",
+    achievements: [
+      <>Analysed user interaction and chatbot performance data to identify trends and improvement opportunities, increasing response accuracy by ~35%.</>,
+      <>Cleaned and transformed 100k+ legacy records using SQL, producing reliable datasets for performance analysis and reporting.</>,
+      <>Delivered structured weekly performance packs and monthly dashboard summaries aligned with leadership review cycles.</>,
+    ],
+    images: [],
+  },
+],
   },
   studies: {
     display: true, // set to false to hide this section
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "RMIT University",
+        description: <>Masters of Data Science</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Kurukshetra University",
+        description: <>Bachelors of Technology (Computer Science & Engineering).</>,
       },
     ],
   },
@@ -172,64 +164,43 @@ const about: About = {
     display: true, // set to false to hide this section
     title: "Technical skills",
     skills: [
-      {
-        title: "Figma",
-        description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
-        ),
-        tags: [
-          {
-            name: "Figma",
-            icon: "figma",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        title: "Next.js",
-        description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
-        ),
-        tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
-          },
-          {
-            name: "Next.js",
-            icon: "nextjs",
-          },
-          {
-            name: "Supabase",
-            icon: "supabase",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
+  {
+    title: "Analytics & BI",
+    description: <>Power BI dashboards, DAX, Power Query, KPI design, stakeholder reporting.</>,
+    tags: [
+      { name: "Power BI"}, // if icon exists; if not, remove icon field
+      { name: "DAX"},
+      { name: "Power Query"},
     ],
+    images: [],
   },
+  {
+    title: "SQL & Data Modeling",
+    description: <>SQL (CTEs, joins, window functions), data validation, analytics-ready tables.</>,
+    tags: [
+      { name: "SQL"},
+      { name: "Data Modeling"},
+    ],
+    images: [],
+  },
+  {
+    title: "Python & Automation",
+    description: <>Python (pandas), automation, data cleaning, and reproducible analysis.</>,
+    tags: [
+      { name: "Python"},
+    ],
+    images: [],
+  },
+  {
+    title: "Cloud & GenAI",
+    description: <>AWS fundamentals + GenAI workflows (RAG, embeddings, prompt engineering).</>,
+    tags: [
+      { name: "AWS"},
+      { name: "RAG"},
+    ],
+    images: [],
+  },
+],
 };
 
 const blog: Blog = {
