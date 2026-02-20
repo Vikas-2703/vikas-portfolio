@@ -6,7 +6,7 @@ const person: Person = {
   lastName: "", // optional (or put your last name)
   name: "Vikas",
   role: "Data Analyst | Data Scientist",
-  avatar: "/images/avatar.jpg",
+  avatar: "/images/avatar.png",
   email: "nitesh.vikas11@gmail.com",
   location: "Australia/Melbourne", 
   languages: ["English", "Hindi"], 
