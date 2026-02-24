@@ -1,0 +1,52 @@
+---
+title: "YouTube Trending Data Pipeline on AWS"
+description: "Built an end-to-end cloud data platform using AWS S3, Glue (PySpark), Lambda, and Athena for large-scale analytics."
+date: "2026-02-24"
+featured: true
+---
+
+## Overview
+Designed and implemented an end-to-end **cloud data engineering pipeline** on AWS to process and analyse YouTube trending data at scale.
+
+The solution transforms raw CSV and JSON data into analytics-ready datasets using a modern data lake architecture.
+
+## Architecture
+- **Landing Layer (S3)** – Raw ingestion of CSV and JSON files  
+- **Cleansed Layer (S3 Parquet)** – Structured, partitioned datasets  
+- **ETL Layer**
+  - AWS Glue (PySpark) for batch processing  
+  - AWS Lambda for event-driven transformations  
+- **Analytics Layer**
+  - AWS Athena for querying  
+  - Power BI / QuickSight for dashboards  
+
+## Data Flow
+1. Raw data uploaded to S3 using CLI :contentReference[oaicite:0]{index=0}  
+2. AWS Lambda processes JSON reference data → converts to Parquet :contentReference[oaicite:1]{index=1}  
+3. AWS Glue PySpark job transforms CSV data and applies schema :contentReference[oaicite:2]{index=2}  
+4. Data stored in partitioned Parquet format for fast querying  
+5. Athena used for SQL-based analytics  
+
+## Key Features
+- Built scalable **data lake architecture (Landing → Cleansed → Analytics)** :contentReference[oaicite:3]{index=3}  
+- Implemented **partitioning by region** for performance optimisation  
+- Automated ETL using **serverless AWS services**  
+- Enabled analytics-ready datasets for BI tools  
+
+## Results
+- Improved query performance using **Parquet + partitioning**
+- Reduced data processing time using distributed PySpark jobs  
+- Enabled real-time ingestion of JSON data using Lambda triggers  
+- Built a scalable pipeline suitable for large datasets  
+
+## Tech Stack
+AWS S3, AWS Glue, PySpark, AWS Lambda, Athena, SQL, Python
+
+## Architecture Diagram
+![Architecture](/images/projects/youtube/architecture.png)
+
+## Impact
+Demonstrates strong capability in **data engineering, cloud pipelines, and scalable analytics systems**, aligned with modern industry practices.
+
+## Links
+- 🔗 [GitHub Repository](https://github.com/Vikas-2703/YouTube-Trending-Video-Analysis)
