@@ -1,0 +1,40 @@
+---
+title: "UMLS-BERT Embeddings + UMAP Clustering"
+description: "NLP project using UMLS-BERT embeddings and UMAP to visualize clustering of medical concepts by semantic groups."
+date: "2026-02-24"
+featured: true
+---
+
+## Overview
+Built an NLP pipeline to generate embeddings for medical concepts using **UMLS-BERT** and visualised semantic clustering using **UMAP**.
+
+## Problem
+Understanding how medical concepts relate semantically is critical for classification, retrieval, and downstream clinical NLP tasks.
+
+## Approach
+- Loaded UMLS datasets (MRCONSO, MRSTY)
+- Filtered English preferred terms
+- Mapped concepts → semantic groups
+- Generated embeddings using pretrained **UMLS-BERT**
+- Applied **UMAP** (cosine distance) for dimensionality reduction
+- Visualised clusters by semantic group
+
+## Results
+- Clear separation of semantic groups in embedding space  
+- Validated effectiveness of domain-specific embeddings  
+- Demonstrated clustering for both UMLS vocabulary and pathology datasets  
+
+## Tech Stack
+Python, Pandas, NumPy, Transformers (BERT), UMAP, Matplotlib
+
+## Visualisations
+
+![UMLS Clustering](/images/projects/umls-bert-umap/umlsbert_umap_umls_vocab.png)
+
+![Pathology Clustering](/images/projects/umls-bert-umap/umlsbert_umap_pathology_concepts.png)
+
+## Impact
+Demonstrates how embedding-based representations can support classification, search, and clinical decision-support systems.
+
+## Links
+- GitHub: https://github.com/Vikas-2703/Clinical-NLP-pipeline
